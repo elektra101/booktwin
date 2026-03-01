@@ -23,8 +23,8 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('/content/drive/MyDrive/booktok_final.csv')
-    embeddings = np.load('/content/drive/MyDrive/booktok_embeddings.npy')
+    df = pd.read_csv('booktok_final.csv')
+    embeddings = np.load('booktok_embeddings.npy')
     return df, embeddings
 
 model = load_model()
